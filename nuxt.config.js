@@ -38,7 +38,10 @@ export default {
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
-	modules: [["cookie-universal-nuxt", { alias: "cookiz" }]],
+	modules: [
+		["cookie-universal-nuxt", { alias: "cookiz" }],
+		["@nuxtjs/tailwindcss"],
+	],
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {},
