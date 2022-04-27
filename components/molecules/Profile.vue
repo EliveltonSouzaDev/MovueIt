@@ -1,9 +1,16 @@
-<template lang="">
+<template>
 	<div class="flex items-center">
-		<img src="alt" alt="" />
+		<img
+			src="https://avatars.githubusercontent.com/u/67668057?v=4"
+			alt="Elivelton Souza"
+			class="mr-6 h-20 rounded-full"
+		/>
 		<div>
-			<strong>{{ $t("profile.name") }}</strong>
-			<p>{{ $t("profile.description") }}</p>
+			<strong class="text-title text-2xl">Elivelton Souza</strong>
+			<p class="flex items-center">
+				<img src="icons/level.svg" alt="level" class="mr-2" />
+				<span class="text-base">{{ level }}</span>
+			</p>
 		</div>
 	</div>
 </template>
