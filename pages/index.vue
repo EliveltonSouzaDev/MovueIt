@@ -25,12 +25,11 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { mapState, mapGetters, mapMutations } from "vuex";
+import { Mutations as CountdownMT } from "~/store/Countdown/types";
 import CompletedChallenges from "~/components/atoms/CompletedChallenges.vue";
 import Profile from "~/components/molecules/Profile.vue";
 import Countdown from "~/components/molecules/Countdown.vue";
-
-import { mapState, mapMutations } from "vuex";
-import { Mutations as CountdownMT } from "~/store/Countdown/types";
 
 import { playAudio, sendNotification } from "~/utils";
 
@@ -55,7 +54,7 @@ export default Vue.extend({
 		}
 	},
 	computed: {
-		...mapState("Challenges", {
+		...mapState('Countdown', {
 			hasCountdownCompleted: "hasCompleted",
 			isCountdownActive: "isActive",
 		}),
